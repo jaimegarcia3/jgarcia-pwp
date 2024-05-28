@@ -9,6 +9,7 @@
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
+<!--NAVIGATION BAR-->
   <nav class="position absolute flex-wrap fixed top-0 w-full bg-blue-400 py-4 gap-y-4 lg:py-4">
       <div class="grid grid-cols-4 max-w-screen-xl flex flex-wrap items-center justify-evenly mx-auto p-0">
           <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
@@ -37,16 +38,21 @@
       </div>
   </nav>
 
+<!--ABOUT ME SECTION WITH AVATAR-->
   <section class="mt-0 container mx-auto rounded-lg bg-sky-100 ">
       <div id="Introduction" class="md:container grid grid-cols-1 sm:grid-cols-4 mx-auto pt-10 pb-0 px-12 md:gap-x-16">
           <div class="lg:pt-56 pt-40 col-span-2">
               <h1 class="font-serif text-3xl font-medium">Hi, my name is Jaime Garcia</h1>
               <div>&nbsp;</div>
               <p class="font-medium text-xl">A dynamic Fullstack Developer from Albuquerque, New Mexico. At the age of 22, I've honed a deep expertise in integrating both front-end and back-end technologies to craft comprehensive web solutions. Known for my meticulous attention to detail and dedication to excellence, I continuously seek to adopt the latest advancements in the field, enhancing the functionality and user experience of my projects.</p>
+
           </div>
+
              <img id="Avatar" class="col-span-2 rounded-full bg-sky-200 h-auto max-w-l ms-auto mt-36 mb-36" src="images/jaimeAvatar.png" alt="Avatar">
+
       </div>
 
+<!--PROJECTS SECTION WITH CAROUSEL-->
       <div id="Projects" class="container mx-auto px-4 py-10">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div id="default-carousel" class="relative w-full" data-carousel="slide">
@@ -92,53 +98,53 @@
               <div class="col-span-1 text-center">
                   <h1 class="font-serif text-4xl font-medium">My Projects</h1>
                   <p class="font-medium text-xl px-6">
-                      As a passionate fullstack developer proficient in JavaScript, React, Typescript, Tailwind, and Next.js, I am committed to continuously sharpening my skills and embarking on innovative projects. I plan to dedicate time each week to exploring new technologies, attending online courses, and participating in coding challenges. Engaging with the developer community through forums and open-source contributions will keep me updated with industry trends. By working on diverse personal projects and collaborating with other developers, I aim to enhance my expertise and remain at the forefront of the ever-evolving tech industry.
+                      As a passionate fullstack developer skilled in JavaScript, React, TypeScript, Tailwind, and Next.js, I am dedicated to continuous learning and innovation. I plan to regularly explore new technologies, take online courses, and join coding challenges. Engaging with the developer community and contributing to open-source projects will keep me updated with industry trends. By working on diverse projects and collaborating with others, I aim to stay at the forefront of the tech industry.
+
                   </p>
               </div>
           </div>
       </div>
   </section>
+
+<!--CONTACT ME FORM-->
   <section id="contactMe" class="mt-0 container mx-auto rounded-lg bg-blue-400">
       <div class="py-4 lg:py-8 px-4 mx-auto max-w-screen-md">
           <h2 class="mb-4 text-4xl tracking-tight font-bold text-center text-white">Contact Me</h2>
-          <p class="mb-8 lg:mb-16 font-light text-center text-white sm:text-xl">Thank you for visiting my website! If you have any questions, project proposals, or just want to connect, please fill out the form below. I look forward to hearing from you and will get back to you as soon as possible..</p>
-          <form action="#" class="space-y-8">
+          <p class="mb-8 lg:mb-16 font-light text-center text-white sm:text-xl">Thank you for visiting my website! If you have any questions, project proposals, or just want to connect, please fill out the form below. I look forward to hearing from you and will get back to you as soon as possible.</p>
+          <form action="https://api.web3forms.com/submit" method="POST">
+              <input type="hidden" name="access_key" value="9374cd6d-3e18-4c16-acb4-d96afbdcc60c">
               <div>
                   <label for="email" class="block mb-1 text-sm font-medium text-white">Your email</label>
-                  <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5" placeholder="name@flowbite.com" required>
+                  <input type="email" name="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5" placeholder="name@flowbite.com" required>
               </div>
               <div>
                   <label for="subject" class="block mb-1 text-sm font-medium text-white">Subject</label>
-                  <input type="text" id="subject" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500" placeholder="Let us know how I can help you" required>
+                  <input type="text" name="subject" id="subject" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500" placeholder="Let us know how I can help you" required>
               </div>
               <div class="sm:col-span-2">
                   <label for="message" class="block mb-1 text-sm font-medium text-white">Your message</label>
-                  <textarea id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500" placeholder="Leave a comment..."></textarea>
+                  <textarea name="message" id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500" placeholder="Leave a comment..."></textarea>
               </div>
               <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Send message</button>
           </form>
       </div>
   </section>
-  <footer class="flex flex-col space-y-10 justify-center m-10">
+
+
+<!--FOOTER SECTION WITH SOCIAL MEDIA ICONS-->
+  <footer class="bg-blue-900 py-4 gap-y-4 lg:py-4">
       <div class="flex justify-center space-x-5">
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-              <img src="https://img.icons8.com/fluent/30/000000/linkedin-2.png"  alt="LinkedIn"/>
+          <a href="https://www.linkedin.com/in/jaime-garcia-abq/" target="_blank" rel="noopener noreferrer">
+              <img class="w-12 h-12" src="https://img.icons8.com/fluent/48/000000/linkedin-2.png" alt="LinkedIn"/>
           </a>
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-              <img src="https://img.icons8.com/fluent/30/000000/instagram-new.png"  alt="Instagram"/>
+          <a href="https://www.instagram.com/jaime_garcia33/" target="_blank" rel="noopener noreferrer">
+              <img class="w-12 h-12" src="https://img.icons8.com/fluent/48/000000/instagram-new.png" alt="Instagram"/>
           </a>
-          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-              <img src="https://img.icons8.com/fluent/30/000000/github.png"  alt="GitHub"/>
+          <a href="https://github.com/jaimegarcia3" target="_blank" rel="noopener noreferrer">
+              <img class="w-12 h-12" src="https://img.icons8.com/fluent/48/000000/github.png" alt="GitHub"/>
           </a>
       </div>
   </footer>
-
-
-
-
-
-
-
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
   <script src="script.js"></script>
