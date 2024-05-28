@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Jgarcia PWP</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="position absolute flex-wrap fixed top-0 w-full bg-blue-400 py-4 gap-y-4 lg:py-4">
+      <div class="grid grid-cols-4 max-w-screen-xl flex flex-wrap items-center justify-evenly mx-auto p-0">
+          <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+              <img src="./images/hireMe-image.png" class="h-20 w-30" alt="Hire Me" />
+          </a>
+
+              <span class="col-span-2 justify-center text-center text-4xl font-bold whitespace-wrap text-white">Jaime Garcia's Portfolio</span>
+
+          <button data-collapse-toggle="navbar-hamburger" type="button" class="col-start-4 inline-flex items-center justify-center p-2 w-10 h-10 text-sm text-black rounded-lg hover:bg-gray-100 focus:outline-none" aria-controls="navbar-hamburger" aria-expanded="false">
+              <span class="sr-only">Open main menu</span>
+              <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+              </svg>
+          </button>
+
+          <div class="hidden col-span-4 w-full" id="navbar-hamburger">
+              <ul class="col-span-4 flex flex-col font-medium mt-4 rounded-lg bg-gray-50">
+                  <li>
+                      <a href="#Projects" class="text-center block py-2 px-3 text-gray-900 hover:text-white rounded hover:bg-blue-500">Projects</a>
+                  </li>
+                  <li>
+                      <a href="#contactMe" class="text-center block py-2 px-3 text-gray-900 hover:text-white rounded hover:bg-blue-500">Contact</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+
+  <section class="mt-0 container mx-auto rounded-lg bg-sky-100 ">
+      <div id="Introduction" class="md:container grid grid-cols-1 sm:grid-cols-4 mx-auto pt-10 pb-0 px-12 md:gap-x-16">
+          <div class="lg:pt-56 pt-40 col-span-2">
+              <h1 class="font-serif text-3xl font-medium">Hi, my name is Jaime Garcia</h1>
+              <div>&nbsp;</div>
+              <p class="font-medium text-xl">A dynamic Fullstack Developer from Albuquerque, New Mexico. At the age of 22, I've honed a deep expertise in integrating both front-end and back-end technologies to craft comprehensive web solutions. Known for my meticulous attention to detail and dedication to excellence, I continuously seek to adopt the latest advancements in the field, enhancing the functionality and user experience of my projects.</p>
+          </div>
+             <img id="Avatar" class="col-span-2 rounded-full bg-sky-200 h-auto max-w-l ms-auto mt-36 mb-36" src="images/jaimeAvatar.png" alt="Avatar">
+      </div>
+
+      <div id="Projects" class="container mx-auto px-4 py-10">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div id="default-carousel" class="relative w-full" data-carousel="slide">
+                  <!-- Carousel wrapper -->
+                  <div class="relative h-96 overflow-hidden rounded-lg">
+                      <!-- Item 1 -->
+                      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                          <img src="/public_html/images/PromptMeScreenshot.png" class="absolute block h-full w-60 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                      </div>
+                      <!-- Item 2 -->
+                      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                          <img src="/public_html/images/PwpWireframe.png" class="absolute block h-full w-[38rem] -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                      </div>
+                      <!-- Item 3 -->
+                      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                          <img src="/public_html/images/RolleCandles-screenshot.png" class="absolute block h-full w-[37rem] -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                      </div>
+                  </div>
+                  <!-- Slider indicators -->
+                  <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+                      <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                      <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                      <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+                  </div>
+                  <!-- Slider controls -->
+                  <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+          <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+          </svg>
+          <span class="sr-only">Previous</span>
+        </span>
+                  </button>
+                  <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+          <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+          </svg>
+          <span class="sr-only">Next</span>
+        </span>
+                  </button>
+              </div>
+              <div class="col-span-1 text-center">
+                  <h1 class="font-serif text-4xl font-medium">My Projects</h1>
+                  <p class="font-medium text-xl px-6">
+                      As a passionate fullstack developer proficient in JavaScript, React, Typescript, Tailwind, and Next.js, I am committed to continuously sharpening my skills and embarking on innovative projects. I plan to dedicate time each week to exploring new technologies, attending online courses, and participating in coding challenges. Engaging with the developer community through forums and open-source contributions will keep me updated with industry trends. By working on diverse personal projects and collaborating with other developers, I aim to enhance my expertise and remain at the forefront of the ever-evolving tech industry.
+                  </p>
+              </div>
+          </div>
+      </div>
+  </section>
+  <section id="contactMe" class="mt-0 container mx-auto rounded-lg bg-blue-400">
+      <div class="py-4 lg:py-8 px-4 mx-auto max-w-screen-md">
+          <h2 class="mb-4 text-4xl tracking-tight font-bold text-center text-white">Contact Me</h2>
+          <p class="mb-8 lg:mb-16 font-light text-center text-white sm:text-xl">Thank you for visiting my website! If you have any questions, project proposals, or just want to connect, please fill out the form below. I look forward to hearing from you and will get back to you as soon as possible..</p>
+          <form action="#" class="space-y-8">
+              <div>
+                  <label for="email" class="block mb-1 text-sm font-medium text-white">Your email</label>
+                  <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5" placeholder="name@flowbite.com" required>
+              </div>
+              <div>
+                  <label for="subject" class="block mb-1 text-sm font-medium text-white">Subject</label>
+                  <input type="text" id="subject" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500" placeholder="Let us know how I can help you" required>
+              </div>
+              <div class="sm:col-span-2">
+                  <label for="message" class="block mb-1 text-sm font-medium text-white">Your message</label>
+                  <textarea id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500" placeholder="Leave a comment..."></textarea>
+              </div>
+              <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Send message</button>
+          </form>
+      </div>
+  </section>
+  <footer class="flex flex-col space-y-10 justify-center m-10">
+      <div class="flex justify-center space-x-5">
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+              <img src="https://img.icons8.com/fluent/30/000000/linkedin-2.png"  alt="LinkedIn"/>
+          </a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+              <img src="https://img.icons8.com/fluent/30/000000/instagram-new.png"  alt="Instagram"/>
+          </a>
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+              <img src="https://img.icons8.com/fluent/30/000000/github.png"  alt="GitHub"/>
+          </a>
+      </div>
+  </footer>
+
+
+
+
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
